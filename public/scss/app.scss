@@ -1,0 +1,52 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #231f20;
+    color: silver;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 64rem;
+    width: 100%;
+}
+
+@media (min-width: 40rem) {
+    .column {
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .column.full { width: 100%; }
+    .column.two-thirds { width: 66.7%; }
+    .column.half { width: 50%; }
+    .column.third { width: 33.3%; }
+    .column.fourth { width: 24.95%; }
+    .column.fifth { width: 20% }
+    .column.four-fifths { width: 80% }
+    .column.flow-opposite { float: right; }
+}
+
+.logo {
+    max-width: 100%;
+}
+
+
+.gallery {
+    padding: 0;
+
+    .image {
+        display: block;
+        height: 100%;
+        background-image: url('../images/gallery1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
